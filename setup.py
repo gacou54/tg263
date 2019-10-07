@@ -3,8 +3,7 @@ import subprocess
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
 
-TG263_FLAKE8_COMMAND = ['./venv/bin/flake8', 'tg263']
-TESTS_FLAKE8_COMMAND = ['./venv/bin/flake8', '--ignore=E501', 'tests']
+FLAKE8_COMMAND = ['./venv/bin/flake8', '--ignore=E501', 'tg263', 'tests']
 MYPY_COMMAND = ['./venv/bin/mypy', 'tg263']
 TESTS_COMMAND = ['./venv/bin/python', '-m', 'unittest', 'discover', '-s', './tests/']
 
@@ -31,8 +30,7 @@ class LintTests(TestCommand):
     user_options = []
 
     def run_tests(self):
-        _run_command(TG263_FLAKE8_COMMAND)
-        _run_command(TESTS_FLAKE8_COMMAND)
+        _run_command(FLAKE8_COMMAND)
         _run_command(MYPY_COMMAND)
 
 
@@ -42,8 +40,7 @@ class AllTests(TestCommand):
 
     def run_tests(self):
         _run_command(TESTS_COMMAND)
-        _run_command(TG263_FLAKE8_COMMAND)
-        _run_command(TESTS_FLAKE8_COMMAND)
+        _run_command(FLAKE8_COMMAND)
         _run_command(MYPY_COMMAND)
 
 
