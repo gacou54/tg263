@@ -10,7 +10,7 @@ structure name filter in your program.
 import tg263
 
 # Result is `True`
-result = tg263.is_structure_name_is_allowed('Prostate')
+result = tg263.is_structure_name_allowed('Prostate')
 ```
 
 
