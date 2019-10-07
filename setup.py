@@ -47,7 +47,6 @@ class AllTests(TestCommand):
 with open('./README.md', 'r') as file_handler:
     long_description = file_handler.read()
 
-
 setup(
     name='tg263',
     version='0.1.0',
@@ -62,5 +61,4 @@ setup(
         'unit': Tests,
         'test': AllTests
     },
-
 )
