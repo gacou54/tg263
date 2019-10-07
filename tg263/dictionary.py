@@ -2,11 +2,12 @@
 # author: Gabriel Couture
 import dataclasses
 import re
+from typing import Pattern
 
 
 @dataclasses.dataclass
 class AllowedStructureName:
-    regex: re.Pattern
+    regex: Pattern
     type: str
 
 

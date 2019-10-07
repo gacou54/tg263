@@ -3,6 +3,9 @@
 !.gitignore
 !setup.py
 !README.md
+!requirements.txt
+!.gitlab-ci.yml
+!LICENSE
 
 !tg263/
 !tg263/**
