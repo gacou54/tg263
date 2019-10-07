@@ -6,6 +6,12 @@ structure name filter in your program.
 ## Installation
 
 ```bash
+$ pip install tg263
+```
+
+Or from current master branch:
+
+```bash
 $ pip install git+https://github.com/gacou54/tg263
 ```
 
