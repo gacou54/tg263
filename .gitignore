@@ -2,6 +2,7 @@
 
 !.gitignore
 !setup.py
+!setup.cfg
 !README.md
 !requirements.txt
 !.gitlab-ci.yml
