@@ -44,7 +44,7 @@ class AllTests(TestCommand):
         _run_command(MYPY_COMMAND)
 
 
-with open('./README.md', 'r') as file_handler:
+with open('./README.md') as file_handler:
     long_description = file_handler.read()
 
 setup(
@@ -54,11 +54,23 @@ setup(
     url='https://gitlab.physmed.chudequebec.ca/gacou54/tg263',
     license='MIT',
     author='Gabriel Couture',
-    author_email='gabriel.couture.4@ulaval.ca',
+    author_email='gacou54@gmail.com',
     description='TG263 implementation',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     cmdclass={
         'lint': LintTests,
         'unit': Tests,
         'test': AllTests
     },
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Healthcare Industry',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.6'
+        'Programming Language :: Python :: 3.7'
+    ]
 )
