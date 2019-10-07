@@ -13,3 +13,6 @@
 
 !tests/
 !tests/**
+
+__pycache__.py
+*.pyc
