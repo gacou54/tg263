@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+!setup.py
+!README.md
+
+!tg263/
+!tg263/**
+
+!tests/
+!tests/**
