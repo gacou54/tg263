@@ -16,6 +16,6 @@ result = tg263.is_structure_name_allowed('Prostate')
 
 ## Acknowledgements
 
-The allowed structure names was taken from the __ESAPIX__
+The allowed structure names were taken from the __ESAPIX__
 project (https://github.com/rexcardan/ESAPIX), made by __Rex Cardan__.
-The ESAPIX license is include in the LICENSE file.
+The ESAPIX license is included in the LICENSE file.
