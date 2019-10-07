@@ -3,6 +3,12 @@
 Basic TG263 implementation. This library could be used as a
 structure name filter in your program. 
 
+## Installation
+
+```bash
+$ pip install git+https://github.com/gacou54/tg263
+```
+
 ## Usage
 
 ### Validating the structure name
