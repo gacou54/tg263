@@ -49,7 +49,7 @@ with open('./README.md') as file_handler:
 
 setup(
     name='tg263',
-    version='0.1.0',
+    version='0.2.0',
     packages=find_packages(),
     url='https://gitlab.physmed.chudequebec.ca/gacou54/tg263',
     license='MIT',
